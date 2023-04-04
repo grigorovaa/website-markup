@@ -1,39 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fefbf7;
   font-family: "Inter", sans-serif;
-  box-sizing: border-box;
   font-weight: 300;
-  border-bottom: 1px solid #212121;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
 }
-h1 {
+
+.title {
   font-weight: 300;
 }
-header {
+
+.navigation {
   border: 1px solid #212121;
-  width: 100%;
 }
+
 .main-navigation {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px 9.59375px 82px;
-  gap: 30.94px;
-  list-style-type: none;
+  padding: 10px 50px 10px 82px;
+  gap: 30px;
   font-weight: 400;
 }
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
+}
+
+.navigation-item {
   color: #212121;
   text-transform: uppercase;
 }
+
 .button {
   background-color: #ebf2cd;
-  width: 260px;
-  height: 50px;
+  /* width: 260px;
+  height: 50px; */
   border: solid #212121;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  color: #212121;
+  margin: 0;
+  padding: 0;
 }
+
 .self-care-terminology {
   background-color: #fcf3e8;
   list-style-type: none;
@@ -41,9 +57,11 @@ a {
   justify-content: space-around;
   width: 100%;
 }
+
 .description-of-item {
   text-transform: capitalize;
 }
+
 /* doesn't work? */
 .contents-journal {
   background: linear-gradient(
@@ -55,27 +73,29 @@ a {
     #f9da83
   );
 }
+.graphics {
+  background: linear-gradient(45deg, #ffd889, #fbaf55, #f9cce0);
+  border-radius: 100px;
+}
 .graphics-1 {
-  width: 151.98px;
+  width: 152px;
   height: 18px;
-  background: linear-gradient(45deg, #ffd889, #fbaf55, #f9cce0);
-  border-radius: 100px;
 }
+
 .graphics-2 {
-  width: 212.78px;
+  width: 212px;
   height: 18px;
-  background: linear-gradient(45deg, #ffd889, #fbaf55, #f9cce0);
-  border-radius: 100px;
 }
+
 .graphics-3 {
-  width: 314.13px;
+  width: 314px;
   height: 18px;
-  background: linear-gradient(45deg, #ffd889, #fbaf55, #f9cce0);
-  border-radius: 100px;
 }
+
 .view-all-products {
   color: #000000;
 }
+
 /* .table-journal-catalogue {
   box-sizing: border-box;
   width: 1784.11px;
@@ -86,23 +106,30 @@ a {
 .email-input {
   background-color: #fefbf7;
   width: 314px;
-  height: 45px;
+  height: 46px;
 }
+
 .small-arrow {
   background-color: #e7eec5;
   width: 44px;
-  height: 45px;
+  height: 46px;
   border: solid #212121;
 }
-.navigation-footer a {
+
+.footer-link {
   text-decoration: none;
   color: #212121;
 }
+
 .copyright {
   background-color: #e7eec5;
 }
+
 .navigation-copyright {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+}
+.footer {
+  border-bottom: 1px solid #212121;
 }
